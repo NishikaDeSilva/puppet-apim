@@ -1,0 +1,61 @@
+{
+  "common": {
+      "jdk_download_link": "https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.tar.gz",
+  },
+  "platforms":[
+      {
+        "name": "api-manager",
+        "git_repo":{
+          "parent": "wso2",
+          "name": "puppet-apim",
+          "branch": "3.0.x"
+        },
+        "products": [
+          {
+              "name": "wso2am",
+              "version": "3.0.0"
+          },
+          {
+              "name": "wso2am-analytics",
+              "version": "3.0.0"
+          },
+          {
+              "name": "wso2is-km",
+              "version": "5.9.0"
+          }
+        ]
+      },
+      {
+        "name": "enterprise-integrater",
+        "git_repo":{
+          "parent": "wso2",
+          "name": "puppet-ei",
+          "branch": "6.6.x"
+        },
+        "products": [
+          {
+              "name": "wso2ei",
+              "version": "6.6.0"
+          }
+        ]
+      },
+      {
+        "name": "identity-server",
+        "git_repo":{
+          "parent": "wso2",
+          "name": "puppet-is",
+          "branch": "5.9.x"
+        },
+        "products": [
+          {
+              "name": "wso2is",
+              "version": "5.9.0"
+          },
+          {
+              "name": "wso2is-analytics",
+              "version": "5.8.0"
+          },
+        ]
+      }
+  ]
+}
